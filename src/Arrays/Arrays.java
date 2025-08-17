@@ -55,7 +55,7 @@ public class Arrays {
 		String x[][]= new String[3][5] ;  // this array has 3 rows and 5 colums
 		
 		System.out.println("it shows total rows...." +x.length);     //
-		System.out.println("it shows total coumns...." +x[0].length);  //
+		System.out.println("it shows total columns...." +x[0].length);  //
 		
 		x[0][0]="A";x[0][1]="B";x[0][2]="C";x[0][3]="D";x[0][4]="E";		// 1st row and 5 columns
 		x[1][0]="A1";x[1][1]="B1";x[1][2]="C1";x[1][3]="D1";x[1][4]="E1";
