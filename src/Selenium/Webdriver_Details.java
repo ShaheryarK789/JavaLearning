@@ -49,10 +49,9 @@ Now you can control Firefox using driver.
 ✅ Advantage of using WebDriver driver instead of FirefoxDriver driver:
 If later you want to switch to Chrome, you just change:
 
-WebDriver driver = new ChromeDriver();
 
 
-and the rest of the code will still work.
+*********************************************************
 
 
 
