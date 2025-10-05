@@ -1,1 +1,40 @@
 
+Compile time VS Run time Errors
+
+Error Type	    Example	              Description
+Compile-time	  int x = "Java";	      Type mismatch detected by compiler
+Compile-time	                        Missing semicolon	Syntax error
+Run-time	      10 / 0	              ArithmeticException
+Run-time	      null.length()	        NullPointerException
+Run-time	      Integer.parseInt("abc")	NumberFormatException
+
+***************** try catch****************88
+try {
+    // Code that might cause an exception
+} catch (ExceptionType e) {
+    // Code to handle the exception
+}
+
+
+--------------
+public class Example1 {
+    public static void main(String[] args) {
+        try {
+            int a = 10, b = 0;
+            int result = a / b;  // ❌ This causes ArithmeticException
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+        }
+
+        System.out.println("Program continues normally...");
+    }
+}
+------------------------
+
+Keyword	        Purpose
+try          	Defines code that might throw an exception
+catch        	Handles the specific exception
+finally	      Always runs after try/catch, for cleanup tasks
+throw	        Manually throw an exception
+throws	      Declares exceptions a method can throw
