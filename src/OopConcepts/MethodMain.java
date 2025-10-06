@@ -5,12 +5,15 @@ public class MethodMain {
 	public static void main(String[] args) {
 		
 		
-		/* Method overriding--> when same Method name is present is Parent class as well as Child Class
-						with same number of Arguments/parameters is called --> Method overriding
-						Preference will be given to overridden Method (Child class method)
+		/* Method overriding--> Method Overriding: When a child class defines a method with the exact same signature 
+									(same name, same number and types of parameters, and same return type) as a method in its parent class, 
+									this is called method overriding. 
+									The child class's implementation of the method replaces the parent class's implementation 
+									when the method is called on an object of the child class.
 
-		Method overloading--> When same Method name is used with different parameters/arguments in same class
-					we can create same method with same number of arguments but have to use different data types
+		Method overloading--> If a class (either parent or child) has multiple methods with the same name but different parameter lists 
+								(different number, type, or order of parameters), this is called method overloading. 
+								The compiler determines which overloaded method to call based on the arguments provided during the method call.
 		 */
 		
 		
