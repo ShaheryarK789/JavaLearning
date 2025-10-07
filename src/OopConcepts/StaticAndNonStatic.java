@@ -33,7 +33,13 @@ public class StaticAndNonStatic {
 		
 		System.out.println(Obj.age);  //  Static can be called by Obj but not recommended
 		
+
+		StaticAndNonStatic P = new StaticAndNonStatic();
+		System.err.println("object of parent: "+P.age);
 		
+
+				StaticAndNonStatic C = new child();
+		System.err.println("object of child: "+C.age);
 		
 	}  
 	
@@ -50,3 +56,10 @@ public class StaticAndNonStatic {
 	}
 
 }
+
+ class child extends StaticAndNonStatic {
+
+	void childmethod(){System.err.println("child method");}
+
+
+ }
