@@ -21,4 +21,15 @@ public class StaticAndFinal {
 variables, ref variables, arrays can be final
 
 */
+   
+    { System.out.println("Instance Block"); }
+     static { System.out.println("Static Block"); }
+   StaticAndFinal() { System.out.println("Constructor"); }
 }
+public class ConstructorLiterals {
+    public static void main(String[] args) {
+        new StaticAndFinal();
+    }
+}
+
+// when printing Static block will run 1st, the, instace block and then constructor block
