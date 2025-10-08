@@ -8,7 +8,7 @@ public class StaticAndFinal {
   static is used for a constant variable or a method that is same for every instance of a class
  When a variable is declared as static, then a single copy of variable is created and shared among all objects at class level. 
   
-  
+  ✅ 5. For final, static, private methods → no overriding.
   Single webdriver variable is used among all classes with the program is example of static variable
   */
 	
