@@ -1,6 +1,12 @@
 package Arrays;
 
-//import java.util.*;
+//An ArrayList is a dynamic array — it can grow and shrink automatically.
+//It belongs to java.util package and stores objects only (not primitive types directly).
+//✅ Can hold objects only — e.g., ArrayList<Integer> for numbers
+//✅ Provides many built-in methods:
+//add(), remove(), get(), set(), size(), contains(), etc.
+//✅ Maintains insertion order (like an array)
+
 import java.util.ArrayList;
 import java.util.ListIterator;
 
