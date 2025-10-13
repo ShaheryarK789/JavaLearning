@@ -46,6 +46,17 @@ public class ArrayList_concept {
         ListIterator<String> C = z.listIterator();
         while (C.hasNext()) {
             System.out.println(C.next());  }
+
+
+		                System.out.println("\n==============>  For with Remove Example....");
+        for (int h=0; h<z.size();h++)
+        {        	
+            if ("man".equals(z.get(h)))
+                { // z.remove(h);
+                    z.set(h, "Woman");
+                 }
+      System.out.println(z.get(h));
+        } 
         
 }
 	
