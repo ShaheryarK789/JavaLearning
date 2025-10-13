@@ -5,7 +5,8 @@ public class StaticAndFinal {
  In Java, static keyword is mainly used for memory management. 
   It can be used with variables, methods, blocks and nested classes. 
   It is a keyword which is used to share the same variable or method of a given class. Basically, 
-  static is used for a constant variable or a method that is same for every instance of a class
+  static is used for a constant variable or a method that is same for every instance of a class, so if changed the next call will have updated value.
+  Always call it using className.VariableName.
  When a variable is declared as static, then a single copy of variable is created and shared among all objects at class level. 
   
   ✅ 5. For final, static, private methods → no overriding.
