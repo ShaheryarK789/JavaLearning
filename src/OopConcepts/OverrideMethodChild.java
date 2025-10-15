@@ -44,11 +44,15 @@ public static void main(String[] args)
     animal O = new dog();
 
     O.run();   // Run Method of child will execute
+               /*  Now by creating normal parent object we use parent method functionality
+                   But by creating reference of parent using overriding - we can call child method of same name and use its functionality 
     
-/* you can create a reference variable of a parent (superclass) and assign it an object of its child (subclass).
+ you can create a reference variable of a parent (superclass) and assign it an object of its child (subclass).
         This is called upcasting — a key part of runtime polymorphism.
         ✅ Syntax:
         Parent reference = new Child();    
+
+  
         
         This way reusability - we just create only one object which is reference of parent and then call same method name of any sub classes at run time. 
         only child class methods will run.
