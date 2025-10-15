@@ -43,7 +43,9 @@ public static void main(String[] args)
     //overloading
     animal O = new dog();
 
-    O.run();   // Run Method of child will execute
+  //  O.bark()   This will throw error as its reference of parent point to child which does not know child methods other than overridden ones.
+
+     O.run();   // Overide: Run Method of child will execute
                /*  Now by creating normal parent object we use parent method functionality
                    But by creating reference of parent using overriding - we can call child method of same name and use its functionality 
     
