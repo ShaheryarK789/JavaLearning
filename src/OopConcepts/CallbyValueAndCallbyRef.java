@@ -1,5 +1,19 @@
 package OopConcepts;
+/*
+Java is only call-by-value.
+But when passing objects, the value of the reference is copied.
+This is why many beginners confuse it with “call by reference.
 
+. Call by Value (Primitives)
+
+When you pass a primitive variable (like int, double, char) to a method,
+Java copies its value. Method works on a new copy — the original variable remains unchanged.
+
+
+Call by “Reference-Like” (Objects)
+when passing objects, the value of the reference is copied. */
+
+	
 public class CallbyValueAndCallbyRef {
 	
 	int p;
