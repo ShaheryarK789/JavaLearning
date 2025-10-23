@@ -1,4 +1,6 @@
-/*Threads allows a program to operate more efficiently by doing multiple things at the same time.
+/*
+Traditional threads or Platform Threads:
+Threads allows a program to operate more efficiently by doing multiple things at the same time.
 Threads can be used to perform complicated tasks in the background without interrupting the main program. 
 
 Extend classes from 'Thread' whose methods need to run in multithreading OR implements Runnable interface
