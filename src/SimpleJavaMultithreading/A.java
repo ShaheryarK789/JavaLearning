@@ -4,7 +4,7 @@ package SimpleJavaMultithreading;
 // those methods of those class should be named as 'run' 
 //	Call the methods of those classes as 'start' like classobject.start
 
-// 1- Extend Thread 2-start  3-run
+//    1- Extend Thread ..............2-start .................. 3-run
 
 public class A {
 
