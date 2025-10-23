@@ -1,5 +1,9 @@
-package Arrays;
+/*A HashMap in Java is a part of the java.util package.
+It stores key-value pairs and allows fast access to values using their keys.
+*/
 
+
+package Arrays;
 import java.util.HashMap;
 
 public class HasMap {
