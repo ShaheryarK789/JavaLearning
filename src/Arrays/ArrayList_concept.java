@@ -7,6 +7,16 @@ package Arrays;
 //add(), remove(), get(), set(), size(), contains(), etc.
 //✅ Maintains insertion order (like an array)
 
+/* Feature	                            ArrayList	                            LinkedList
+Data Structure	            Dynamic array	                            Doubly linked list
+Storage	                Stores elements in a contiguous array	    Each element (node) stores data + address of next and previous nodes
+Access                          Fast	                                    Slow (O(n)) — must traverse nodes
+Insertion/Deletion	            Slow (O(n))                                  just change pointers (if node reference known)
+Memory usage	            Less memory	                            More memory (extra references per node)
+Iteration           speed	Faster (better cache locality)	                    Slower
+Best use case	            Frequent access                 	    Frequent insertions/deletions, sequential access
+ */
+
 import java.util.ArrayList;
 import java.util.ListIterator;
 
