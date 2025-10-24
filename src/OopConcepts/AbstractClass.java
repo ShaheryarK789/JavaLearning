@@ -13,13 +13,13 @@ if we remove abstract keywords and add method body in abstract method of animal 
 Abstract vs Interface:
 All the methods in Abstract class can be abstract. All the Methods in Interface are always abstract by default.
 We can extend (abstract) only one class to be parent of a subclass but we can implement as many as possible.
-We do not need to initiate variables in abstarct class to use in child. In interface we have to initiate variables that do not change afterwards. 
+We do not need to initiate variables in abstarct class to use in child. In interface we have to initiate variables that do not change afterwards (static final). 
 
 Abstract methods can be used differntly in child class to use differently in every class like parent animal has makesound method
 and childs can used them differently in its body when  child object created and called that method, it works as implemented in it. 
 That's why object of abstract class should not be created.
 */
- 
+ //Example:  milk extends food implements liquid, drinkable    [multiple inhertance can be achieved through interface]
  
 
 abstract class animal{
