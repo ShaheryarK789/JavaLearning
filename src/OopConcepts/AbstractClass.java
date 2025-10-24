@@ -4,7 +4,7 @@
 	 Why WebDriver is an interface and not an abstract class?
      You can easily switch from Chrome to Firefox without changing your core logic — just create a new subclass.
 Abstract:
- An abstract class is a parent class that cannot be instantiated (you can’t create its object directly).
+ An abstract class is a parent class that cannot be instantiated. CANNOT CREATE OBJECT OF ABSTRACT CLASS.
 It is meant to be inherited and completed by child classes.
 It’s used for abstraction — hiding implementation and showing only the structure. 
 Add abstract keyword for class and its methods, use extends keyword for subclasses.
