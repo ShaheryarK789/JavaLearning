@@ -8,7 +8,15 @@ Abstract:
 It is meant to be inherited and completed by child classes.
 It’s used for abstraction — hiding implementation and showing only the structure. 
 Add abstract keyword for class and its methods, use extends keyword for subclasses.
-if we remove abstract keywords and add method body in abstract method of animal then this will work as override*/
+if we remove abstract keywords and add method body in abstract method of animal then this will work as override
+
+Abstract vs Interface:
+All the methods in Abstract class can be abstract. All the Methods in Interface are always abstract by default.
+We can extend (abstract) only one class to be parent of a subclass but we can implement as many as possible.
+We do not need to initiate variables in abstarct class to use in child. In interface we have to initiate variables that do not change afterwards. 
+
+
+*/
  
  
 
