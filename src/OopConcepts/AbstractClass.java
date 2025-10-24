@@ -18,8 +18,12 @@ We do not need to initiate variables in abstarct class to use in child. In inter
 Abstract methods can be used differntly in child class to use differently in every class like parent animal has makesound method
 and childs can used them differently in its body when  child object created and called that method, it works as implemented in it. 
 That's why object of abstract class should not be created.
+
+When have closely related classes that have have to work on same functionality and same types of variables - use Abstract class
+When unrelated classes that have to work on same functionality - with set variable values - Use Interfaces
+
 */
- //Example:  milk extends food implements liquid, drinkable    [multiple inhertance can be achieved through interface]
+//Example:  milk extends food implements liquid, drinkable    [multiple inhertance can be achieved through interface]
  
 
 abstract class animal{
