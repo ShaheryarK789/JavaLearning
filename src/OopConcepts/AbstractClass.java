@@ -5,7 +5,7 @@
      You can easily switch from Chrome to Firefox without changing your core logic — just create a new subclass.
 Abstract:
  An abstract class is a parent class that cannot be instantiated. CANNOT CREATE OBJECT OF ABSTRACT CLASS.
-It is meant to be inherited and completed by child classes.
+It is meant to be inherited and completed by child classes. The Method body is empty.
 It’s used for abstraction — hiding implementation and showing only the structure. 
 Add abstract keyword for class and its methods, use extends keyword for subclasses.
 if we remove abstract keywords and add method body in abstract method of animal then this will work as override
@@ -15,7 +15,9 @@ All the methods in Abstract class can be abstract. All the Methods in Interface 
 We can extend (abstract) only one class to be parent of a subclass but we can implement as many as possible.
 We do not need to initiate variables in abstarct class to use in child. In interface we have to initiate variables that do not change afterwards. 
 
-
+Abstract methods can be used differntly in child class to use differently in every class like parent animal has makesound method
+and childs can used them differently in its body when  child object created and called that method, it works as implemented in it. 
+That's why object of abstract class should not be created.
 */
  
  
