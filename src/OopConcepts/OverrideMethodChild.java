@@ -1,9 +1,9 @@
 package OopConcepts;
 
 //When Method names are same:
-// Same parameters (number or type) in same class is not allowed
-// For same class or subclass ----Different parameters (number or type) → Overloading
-// The overriding method in the subclass must have the exact same number and types of parameters as the overridden method in the superclass. 
+// Same parameters (number or type with same order) in same class is not allowed
+// For same class or subclass ----Different parameters (number or type with same order) → Overloading
+// For sub class --- Same parameters (number or type with same order) → Overriding
 
 
  class animal {
