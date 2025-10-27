@@ -1,7 +1,7 @@
 package OopConcepts;
 
 // The overriding method in the subclass must have the exact same number and types of parameters as the overridden method in the superclass. 
-//If the number or types of parameters differ, it is considered method overloading, not overriding.
+//If the number or types of parameters differ, it is considered method overloading, even in sub class.
 
 
  class animal {
