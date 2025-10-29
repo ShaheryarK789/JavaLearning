@@ -30,6 +30,11 @@ class Student{
     }
 }
 
+
+🧹 Garbage Collection in Java = JVM’s automatic memory management system
+It reclaims memory from objects no longer referenced, keeping the program efficient and safe from memory leaks.
+
+
 -- instance variable stored in object and object are in heap therefore we can say that instance variable created in heap.
 -- method declaration and definition is present in object but actual implementation present in stack frame of stack.
 -- local variable created in stack during call of method.
