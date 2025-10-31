@@ -1,0 +1,19 @@
+// Using Method Reference
+import java.util.Arrays;
+public class MethodReference 
+{
+  	// Method
+    public static void print(String s) {
+        System.out.println(s);
+    }
+
+    public static void main(String[] args) 
+    {
+        String[] names = {"Geeko1", "Geeko2", "Geeko3"};
+
+        // Using method reference to print each name
+        Arrays.stream(names).forEach(MethodReference::print);
+
+       
+    }
+}
