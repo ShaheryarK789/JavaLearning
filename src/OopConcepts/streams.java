@@ -98,8 +98,10 @@ public class streams {
         
         L.stream().forEach(s->System.out.println("Print new collect list: "+s));
         
-        
-        // return true or false Using match
+      
+		
+		
+		// return true or false Using match
         
      //  boolean flag =   CStream.anyMatch(s->s.equalsIgnoreCase("umer"));
     // return flag;  it will show true or false
