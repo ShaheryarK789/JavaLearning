@@ -40,3 +40,125 @@ No reference	        new Student();	            Object is unreachable and soon g
 Superclass reference, subclass object	Animal a = new Dog();	Enables polymorphism
 
 */
+// out of class instance block and static block creation
+
+class Parent {
+    static {
+        System.out.println("A ");
+    }
+
+    {
+        System.out.println("B ");
+    }
+}
+
+public class Child extends Parent {
+    static {
+        System.out.println("C ");
+    }
+
+    {
+        System.out.println("D ");
+    }
+
+    public static void main(String[] args) {
+        Child child1 = new Child(); 
+        Child child2 = new Child();  
+    }
+}
+ChatGPT said:
+
+Excellent 👏 — you’ve now added two object creations, which makes the execution order even clearer.
+
+Let’s walk through exactly what happens step-by-step 👇
+
+💻 Code Recap
+class Parent {
+    static {
+        System.out.println("A ");
+    }
+
+    {
+        System.out.println("B ");
+    }
+}
+
+public class Child extends Parent {
+    static {
+        System.out.println("C ");
+    }
+
+    {
+        System.out.println("D ");
+    }
+
+    public static void main(String[] args) {
+        Child child1 = new Child();
+        Child child2 = new Child();
+    }
+}
+
+🧠 Step-by-Step Execution
+1️⃣ Class Loading Phase
+
+When Child.main() runs:
+
+JVM loads the Child class.
+
+Before Child can load, its superclass Parent must also load.
+
+👉 So:
+
+Parent’s static block runs → prints A
+
+Child’s static block runs → prints C
+
+✅ Output so far:
+
+A 
+C 
+
+2️⃣ Object Creation Phase
+
+Now the code executes:
+
+Child child1 = new Child();
+
+
+To create the first object:
+
+Parent’s instance block runs → prints B
+
+Child’s instance block runs → prints D
+
+✅ Output so far:
+
+A 
+C 
+B 
+D 
+
+
+Then the next line executes:
+
+Child child2 = new Child();
+
+
+When creating the second object, remember:
+
+Static blocks do not run again — they run only once per class (when the class is first loaded).
+
+So only the instance blocks run again:
+
+Parent’s instance block → prints B
+
+Child’s instance block → prints D
+
+✅ Final Output:
+
+A 
+C 
+B 
+D 
+B 
+D
