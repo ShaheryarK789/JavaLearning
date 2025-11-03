@@ -20,7 +20,7 @@ public class ParentChildObjExample {
             // Only a child object (or parent reference pointing to a child object) can access overridden parent methods (via polymorphism)
             //Reference type decides what you can access. Object type decides what actually runs for overridden.
         Dog d = new Dog();     // Subclass reference
-            //  d.sound();            // ✅ Allowed
+                d.sound();            // ✅ Allowed  parent method
                 d.bark();             // ✅ Allowed
                 d.tail();             // ✅ Allowed
     }
