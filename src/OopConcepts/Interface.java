@@ -1,6 +1,7 @@
 /* multiple inheritence can be achieved through Interface.
 Interface is a contract that classes must follow.
- Methods are abstract by default, Methods are always public */
+ In Interface class: All Methods are abstract by default.
+ In implemented class: Methods that implement interface methods must be public */
 
 
  /* interface Animal {
