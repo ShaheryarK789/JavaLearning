@@ -36,3 +36,22 @@ public class CompareArrays {
 	}
 
 }
+
+
+import java.util.*;
+
+public class SameObjectExample {
+    public static void main(String[] args) {
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("A");
+        list1.add("B");
+
+        // When both arraylsts refers to same object, here list2 refers to the same object as list1
+        ArrayList<String> list2 = list1;
+
+        list2.add("C");
+
+        System.out.println("List1: " + list1);
+        System.out.println("List2: " + list2);   // Now both will have same [A,B,C]
+    }
+}
