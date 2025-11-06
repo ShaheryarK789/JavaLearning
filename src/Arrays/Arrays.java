@@ -77,7 +77,8 @@ public class Arrays {
 
 		
 		
-		
+		int[] arr = new int[5]; 
+		System.out.println(arr); //when you directly print an array reference (like arr), it does not print the array elements. Instead, it prints: address
 		
 		
 }
