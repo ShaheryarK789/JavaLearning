@@ -57,3 +57,34 @@ return this;	            Enables method chaining	                        add().m
 pass this	                Pass current object to another method	            p.print(this);
 
  */
+
+
+// 3rs example
+
+
+public class ThisKeyword {
+
+    int num;
+    String s;
+
+void assign (int num, String s){
+
+    System.out.println("value in method are: " + num + s);
+
+    this.num= num;
+    this.s=s;
+}
+}
+
+class G1{
+    public static void main(String[] args) {
+
+
+        ThisKeyword obj = new ThisKeyword();
+        obj.assign(10, "Shari");
+
+        System.out.println(obj.num);
+        System.out.println(obj.s);
+       }
+
+    }
