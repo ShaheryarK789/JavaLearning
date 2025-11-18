@@ -42,5 +42,11 @@ It reclaims memory from objects no longer referenced, keeping the program effici
 -- st is reference variable created inside the current stack frame and it is reference variable store address of student object created in heap area.
 -- new Student() create object in heap area and pointed by his reference variable.
 
+
+Memory Area	                 Purpose	                                Thread Shared?
+Heap	                 Stores objects, arrays	                        Yes
+Class/Method            Area	Class metadata, static data, bytecode	  Yes
+Stack	Method             calls, local variables, ref of objects      No (one per thread)
+
 }
  */
