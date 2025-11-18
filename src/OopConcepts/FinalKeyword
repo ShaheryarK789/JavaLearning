@@ -1,0 +1,4 @@
+final variable	Cannot change value / reference
+final method	Cannot be overridden
+final class	Cannot be inherited
+final parameter	Cannot be modified inside method
