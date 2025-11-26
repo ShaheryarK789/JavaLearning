@@ -128,7 +128,7 @@ d) NullPointerException
 //Instance methods → overridden → supports dynamic binding (runtime polymorphism)
 //Static methods → hidden, NOT overridden → resolved at compile time based on reference type
 
-
+//Q6 — Trick with Static method
 public class Test {
     public static void main(String[] args) {
         Super s = new Subclass();
