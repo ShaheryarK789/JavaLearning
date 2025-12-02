@@ -4,6 +4,7 @@ package OopConcepts;
 // Same parameters (number or type with same order) in same class is not allowed
 // For same class or subclass ----Different parameters (number or type with same order) → Overloading
 // For sub class --- Same parameters (number or type with same order) → Overriding
+// Static Methods cannot be overridden. but overloading can.
 
 
  class animal {
