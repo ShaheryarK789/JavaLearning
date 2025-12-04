@@ -1,0 +1,134 @@
+why to use Use a ThreadLocal Driver for parallel execution in selenium. teach me as i am on initial stages of understanding java and selenium
+
+
+🧒 Beginner-Friendly Explanation
+🚗 Imagine You Have a Car (WebDriver)
+
+In automation:
+
+The browser = your car
+
+Each test = a driver who needs their own car
+
+If you give the same car to multiple people at the same time, they will crash into each other.
+
+➡️ This happens when you use one shared WebDriver (normal Singleton).
+
+To avoid this, each person/test gets their own car.
+
+➡️ This is done using ThreadLocal Singleton.
+
+🧵 What is a Thread?
+
+In parallel testing:
+
+Test 1 runs in Thread A
+
+Test 2 runs in Thread B
+
+Test 3 runs in Thread C
+
+Each thread is like a separate lane on a highway.
+
+🧵 Why Can't We Use Normal Singleton?
+
+A normal Singleton looks like this:
+
+private static WebDriver driver;
+
+
+This means ALL tests share the same browser.
+So if Test A does:
+
+driver.get("google.com");
+
+
+And Test B does:
+
+driver.get("facebook.com");
+
+
+The browser will jump between pages → ❌ unpredictable test failures.
+
+❤️ Solution: ThreadLocal Singleton Driver
+
+ThreadLocal ensures:
+
+Thread A gets its own driver
+
+Thread B gets its own driver
+
+Thread C gets its own driver
+
+But we still control drivers through ONE class: DriverManager.
+
+✔ Let’s Build a Simple ThreadLocal DriverManager From Scratch
+Step 1: Create DriverManager.java
+public class DriverManager {
+
+    // ThreadLocal creates one WebDriver per thread
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+    // Private constructor: No one can create an object of this class
+    private DriverManager() {}
+
+    public static WebDriver getDriver() {
+        if (driver.get() == null) {
+            driver.set(new ChromeDriver());  // each thread gets its own ChromeDriver
+        }
+        return driver.get();
+    }
+
+    public static void quitDriver() {
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();  // removes driver from that thread
+        }
+    }
+}
+
+✔ Step 2: Use It in Your Test
+public class DemoTest {
+    @Test
+    public void test1() {
+        WebDriver driver = DriverManager.getDriver();
+        driver.get("https://google.com");
+        System.out.println("Title: " + driver.getTitle());
+        DriverManager.quitDriver();
+    }
+}
+
+
+If you run 5 tests in parallel:
+
+👉 5 drivers will be created
+👉 Each test gets its own browser
+👉 No interference
+👉 No random failures
+
+🎯 Summary (Beginner Friendly)
+Concept	Meaning
+Singleton	One instance shared by all → BAD for parallel
+Thread	A track/lane where tests run
+ThreadLocal	Gives each thread its own copy
+ThreadLocal Singleton	Best for parallel browsers
+🧠 Why Is This Important in Automation?
+
+Because in the real world:
+
+Companies run 50+ tests at the same time
+
+They use Selenium Grid / AWS / Docker
+
+Each test opens its own browser
+
+They must NOT share the same WebDriver
+
+ThreadLocal makes this safe.
+
+👨‍🏫 If You Want, I Can Teach You Next:
+
+✅ How to run parallel tests using TestNG
+✅ How to create Page Object Model (POM) with ThreadLocal
+✅ How to use ThreadLocal with Selenium Grid
+✅ A complete Selenium framework for beginners
