@@ -11,7 +11,9 @@ Map	                        HashMap	                        Stores key/value pai
                             LinkedHashMap	                Maintains the order in which keys were inserted
 
 
-
+Differences between ArrayList and LinkedList?
+ArrayList provides fast random access but slower insertions/deletions. 
+LinkedList, on the other hand, uses a doubly-linked list which makes insertions/deletions faster at the cost of slower random access.
 
 
 
