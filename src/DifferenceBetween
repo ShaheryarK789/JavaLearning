@@ -1,1 +1,15 @@
 
+Final, Finally, Finalize
+
+Final:
+It is modifier for classes, methods and variables.
+Class declared as Final, we cannot extend that class.
+Method declared cannot be override.
+Variable declared cannot be changed, becoes constant.
+
+Finally:
+A block used after Try and catch. Which runs evry time. to clean up code.
+
+Finalize:
+Its a garbage collector method, called before destroying the object to clean up activity.
+
