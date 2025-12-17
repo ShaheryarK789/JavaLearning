@@ -1,0 +1,61 @@
+Final, Finally, Finalize
+
+Final:
+It is modifier for classes, methods and variables.
+Class declared as Final, we cannot extend that class.
+Method declared cannot be override.
+Variable declared cannot be changed, becoes constant.
+
+Finally:
+A block used after Try and catch. Which runs evry time. to clean up code.
+
+Finalize:
+Its a garbage collector method, called before destroying the object to clean up activity.
+
+***************************************
+String, String buffer, String builder
+
+String
+
+Immutable: once created, its value cannot be changed.
+Thread-safe by default.
+Slower for frequent modifications due to creation of new objects.
+
+StringBuffer
+
+Mutable: content can be changed.
+Thread-safe (synchronized methods).
+Slower than StringBuilder due to synchronization overhead.
+
+StringBuilder
+
+Mutable like StringBuffer.
+Not thread-safe.
+Faster than StringBuffer; preferred in single-threaded scenarios
+
+***********************************************
+
+Difference between "== operator" and "equals() method" in java
+== Operator
+
+Compares references (memory addresses) for objects.
+For primitive types, compares actual values.
+Checks whether both variables point to the same object.
+
+"equals() method":
+Compares content / logical equality of objects.
+****************************************************
+
+Access Specifiers vs Access Modifiers
+Access Specifiers:
+who can access a class, method, variable, or constructor.
+like; public, protected, private
+
+Access Modifiers:
+How a class, method, or variable behaves, not visibility.
+static, final, abstract
+******************************************************
+🔹 Exception VS Error
+
+Exceptions are recoverable conditions that applications can handle. unhandeled or handeled.
+Errors are serious JVM-level problems that applications should not attempt to handle. Occurs at runtime.
