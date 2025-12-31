@@ -1,1 +1,44 @@
 
+***************************************Reverse a java string**************************************
+// best way
+public class ReverseString {
+    public static void main(String[] args) {
+        String input = "automation";
+        String reversed = new StringBuilder(input).reverse().toString();
+        System.out.println(reversed);
+    }
+}
+
+// 2nd way
+public class ReverseStringArray {
+    public static void main(String[] args) {
+        String input = "testing";
+        char[] chars = input.toCharArray();
+
+        for (int i = chars.length - 1; i >= 0; i--) {
+            System.out.print(chars[i]);
+        }
+    }
+}
+
+***************************************Count occurance of characters in a string**************************************
+public class RepeatingUsingArray {
+    public static void main(String[] args) {
+
+        String input = "automation";
+        int[] count = new int[26];
+
+        for (char ch : input.toCharArray()) {
+            if (ch >= 'a' && ch <= 'z') {
+                count[ch - 'a']++;
+            }
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if (count[i] > 1) {
+                System.out.println((char)(i + 'a') + " -> " + count[i]);
+            }
+        }
+    }
+}
+**************************************
