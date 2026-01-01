@@ -1,4 +1,4 @@
- Simple definition:
+
 
 An Exception is an object that represents an error or unexpected event during program execution.
 
@@ -13,6 +13,13 @@ Prevent program crashes.
 Keep code clean and readable using try-catch blocks.
 
 🧩 Types of Exceptions in Java
+ Summary of Differences
+Feature                    	Handled (Checked) Exceptions                            	Unhandled (Unchecked) Exceptions
+Checked                                at	Compile time	                                 Run time
+Handling                            enforced?	Yes, must be caught or declared	No,        optional handling
+Source of issue                  	Anticipated external conditions	               Programming errors/logic bugs
+Recovery                        	Often recoverable	Usually                     fatal for the current operation
+Key examples	                   IOException, SQLException	                    NullPointerException, ArithmeticException
 
 Java exceptions are divided mainly into three categories:
 
